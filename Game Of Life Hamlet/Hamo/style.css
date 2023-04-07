@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: montserrat;
+}
+
+nav {
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+	background: #1b9bff;
+	transition: .5s;
+}
+
+section {
+	background: url(images/background.png) no-repeat;
+	background-size: cover;
+	height: calc(120vh - 90px);
+}
+
+.content {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+
+.content h1 {
+	font-size: 65px;
+	margin-top: 120px;
+	color: white;
+}
+
+.content p {
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+button {
+	width: 180px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 5px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #f3c070;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span {
+	background: #2678EE;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span {
+	width: 100%;
+}
+
+button:hover {
+	border: none;
+}
+
+.back {
+	background: url(images/pro-info.png) no-repeat;
+	background-size: cover;
+	height: calc(120vh - 90px);
+}
+
+.cover {
+	width: 900px;
+	height: 400px;
+	margin-top: 50px;
+	display: flex;
+}
+
+.box {
+	margin: 20px;
+	width: 260px;
+	height: 450px;
+	box-shadow: -4px 0 10px #000000;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+img {
+	width: 145px;
+	height: 100px;
+	display: flex;
+	justify-content:baseline;
+}
+
+canvas {
+	margin-left: 35%;
+	margin-top: -45%;
+	position: absolute;
+}
