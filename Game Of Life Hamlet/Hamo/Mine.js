@@ -1,7 +1,6 @@
-class Mine {
+class Mine extends LivingCreature {
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x, y)
         this.multiply = 0
         this.directions = [
             [this.x - 2, this.y - 1],
@@ -46,7 +45,7 @@ class Mine {
 
 
     mul() {
-      
+
         this.multiply++
         let emptyCell = this.chooseCell(0)
         let newCell = random(emptyCell)

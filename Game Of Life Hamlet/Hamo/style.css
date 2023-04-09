@@ -138,7 +138,7 @@ img {
 	width: 145px;
 	height: 100px;
 	display: flex;
-	justify-content:baseline;
+	justify-content: baseline;
 }
 
 canvas {

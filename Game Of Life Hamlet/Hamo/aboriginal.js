@@ -1,7 +1,6 @@
-class Aboriginal {
+class Aboriginal extends LivingCreature {
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x, y)
         this.energy = 14
         this.directions = [];
     }
