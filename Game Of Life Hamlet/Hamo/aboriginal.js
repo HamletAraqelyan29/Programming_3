@@ -3,7 +3,7 @@ class Aboriginal extends LivingCreature {
         super(x, y)
         this.energy = 14
         this.directions = [];
-    }
+    };
 
 
     getNewCoordinates() {
@@ -127,7 +127,7 @@ class Aboriginal extends LivingCreature {
 
         for (let i in aboriginalArr) {
             if (this.x == aboriginalArr[i].x && this.y == aboriginalArr[i].y) {
-                aboriginalArr.splice(i, 1)
+                aboriginalArr.splice(i, 1);
             }
         }
     }
