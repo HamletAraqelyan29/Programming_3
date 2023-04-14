@@ -1,4 +1,5 @@
-function matrixGenerator(matrixSize, grass, grassEater, predator, environmentalist, hunter, mine, aboriginal) {
+let LivingCreature = require("./LivingCreature")
+module.exports = function matrixGenerator(matrixSize, grass, grassEater, predator, environmentalist, hunter, mine, aboriginal) {
         var matrix = []
 
         for (let i = 0; i < matrixSize; i++) {
