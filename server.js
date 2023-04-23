@@ -1,26 +1,22 @@
 
-let express = require("express")
-let app = express()
-let server = require9("http").Server(app)
-let io = require("socket.io")(server)
-let fs = require("fs")
-
+var express = require("express")
+var app = express()
+var server = require("http").Server(app)
+var io = require("socket.io")(server)
+var fs = require("fs")
+const {kill} = require("process")
 app.use(express.static("."))
 
 app.get("/", function (req, res) {
     res.redirect("play.html")
 })
 
-server.listen(3000, function () {
-    console.log("server is run");
-
-})
+server.listen(3001)
 
 
+ matrix = []
 
-let LivingCreature = require("./LivingCreature")
-module.exports = function matrixGenerator(matrixSize, grass, grassEater, predator, environmentalist, hunter, mine, aboriginal) {
-    var matrix = []
+function matrixGenerator(matrixSize, grass, grassEater, predator, environmentalist, hunter, mine, aboriginal) {
 
     for (let i = 0; i < matrixSize; i++) {
         matrix.push([])
@@ -68,7 +64,7 @@ module.exports = function matrixGenerator(matrixSize, grass, grassEater, predato
         let y = Math.floor(Math.random() * matrixSize)
         matrix[y][x] = 7
     }
-    return matrix
+   
 }
 
 
@@ -86,9 +82,9 @@ mineArr = []
 aboriginalArr = []
 
 Grass = require("./grass")
-GrassEater  = require("./grassEater")
-Predator  = require("./predator")
-Enviromentalist  = require("./environmentalist")
+GrassEater = require("./grassEater")
+Predator = require("./predator")
+Enviromentalist = require("./environmentalist")
 Hunter = require("./hunter")
 Mine = require("./Mine")
 Aboriginal = require("./aboriginal")
@@ -131,6 +127,41 @@ function createObject() {
 
         }
     }
-    io.sockets.emit("send matrix", matrix)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    io.sockets.emit("send matrix", matrix)
 }
+function game() {
 
+    for (let i in grassArr) {
+        grassArr[i].mul()
+    }
+
+
+    for (let i in grassEaterArr) {
+        grassEaterArr[i].eat()
+    }
+
+    for (let i in predatorArr) {a
+        predatorArr[i].eat()
+    }
+    for (let i in environmentalistArr) {
+        environmentalistArr[i].eat()
+    }
+    for (let i in hunterArr) {
+        hunterArr[i].eat()
+    }
+    for (let i in aboriginalArr) {
+        aboriginalArr[i].eat()
+    }
+
+    for (let i in mineArr) {
+        mineArr[i].mul()
+    }
+
+    io.sockets.emit("send matrix", matrix)
+
+}
+setInterval(game,300)
+
+io.on("connection", function () {
+    createObject
+})
