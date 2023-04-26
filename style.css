@@ -146,3 +146,40 @@ canvas {
 	margin-top: -45%;
 	position: absolute;
 }
+
+.Add_Grass {
+	background-color: forestgreen;
+	color: white;
+	font-style: italic;
+}
+
+.Add_GrassEater {
+	background-color: yellow;
+	color: black;
+	font-style: normal;
+}
+
+.Add_Predator {
+	background-color: red;
+	color: white;
+	font-style: oblique;
+}
+
+.Add_Enviromentalist {
+	background-color: forestgreen;
+	color: black;
+	font-style: inherit;
+}
+
+.Add_Aboriginal {
+	background-color: #000000;
+	color: white;
+	font-style: initial;
+
+}
+
+.Add_Hunter {
+	background-color: blue;
+	color: black;
+	font-style: unset;
+}
