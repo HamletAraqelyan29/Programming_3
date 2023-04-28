@@ -1,5 +1,5 @@
 let LivingCreature = require("./LivingCreature")
-module.exports = class hunter extends LivingCreature {
+module.exports = class Hunter extends LivingCreature {
     constructor(x, y) {
         super(x, y)
         this.energy = 17
@@ -53,7 +53,7 @@ module.exports = class hunter extends LivingCreature {
 
             matrix[newY][newX] = 5
 
-            let hunEat = new hunter(newX, newY)
+            let hunEat = new Hunter(newX, newY)
 
             hunterArr.push(hunEat)
 

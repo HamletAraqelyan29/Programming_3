@@ -1,5 +1,5 @@
 let LivingCreature = require("./LivingCreature")
-module.exports = class environmentalist extends LivingCreature {
+module.exports = class Environmentalist extends LivingCreature {
     constructor(x, y) {
         super(x, y)
         this.energy = 17
@@ -52,7 +52,7 @@ module.exports = class environmentalist extends LivingCreature {
 
             matrix[newY][newX] = 4
 
-            let envEat = new environmentalist(newX, newY)
+            let envEat = new Environmentalist(newX, newY)
 
             environmentalistArr.push(envEat)
 
