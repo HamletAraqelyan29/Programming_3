@@ -160,7 +160,7 @@ function game() {
     io.sockets.emit("send matrix", matrix)
 
 }
-setInterval(game, 300)
+setInterval(game, 100)
 
 io.on("connection", function () {
     createObject()
@@ -246,15 +246,15 @@ io.sockets.emit("send matrix", matrix)
 
 var statistics = {}
 
-setInterval(function () {
+// setInterval(function () {
 
-    statistics.grass = grassArr.length
-    statistics.grassEater = grassEaterArr.length
-    statistics.predator = predatorArr.length
-    statistics.hunter = hunterArr.length
-    statistics.aboriginal = aboriginalArr.length
-    statistics.environmentalist = environmentalistArr.length
-    fs.writeFile("statistics.json",JSON.stringify(statistics),function(){
-  console.log("Statistics")
-    })
-}, 1000) 
+//     statistics.grass = grassArr.length
+//     statistics.grassEater = grassEaterArr.length
+//     statistics.predator = predatorArr.length
+//     statistics.hunter = hunterArr.length
+//     statistics.aboriginal = aboriginalArr.length
+//     statistics.environmentalist = environmentalistArr.length
+//     fs.writeFile("statistics.json",JSON.stringify(statistics),function(){
+//   console.log("Statistics")
+//     })
+// }, 1000) 
