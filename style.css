@@ -143,44 +143,123 @@ img {
 
 canvas {
 	margin-left: 35%;
-	margin-top: -45%;
+	margin-top: -43%;
 	position: absolute;
 }
 
 .Add_Grass {
+
+	width: 200px;
 	background-color: forestgreen;
 	color: white;
 	font-style: italic;
-	
+	border: 3px solid red;
+
 }
 
 .Add_GrassEater {
+	width: 200px;
 	background-color: yellow;
 	color: black;
 	font-style: normal;
+	border: 3px solid blue;
 }
 
 .Add_Predator {
+	width: 200px;
 	background-color: red;
 	color: white;
 	font-style: oblique;
+	border: 3px solid orange;
 }
 
 .Add_Enviromentalist {
-	background-color: forestgreen;
+	width: 200px;
+	background-color: white;
 	color: black;
 	font-style: inherit;
+	border: 3px solid blue;
 }
 
 .Add_Aboriginal {
+	width: 200px;
 	background-color: #000000;
 	color: white;
 	font-style: initial;
+	border: 3px solid skyblue;
 
 }
 
 .Add_Hunter {
+	width: 200px;
 	background-color: blue;
 	color: black;
 	font-style: unset;
+	border: 3px solid red;
+}
+
+.conteiner {
+	width: 100px;
+	margin-top: 15%;
+	margin-left: 25%;
+}
+
+.conteiner2 {
+	width: 100px;
+	margin-top: -11%;
+	margin-left: 56%;
+
+}
+
+.wheater {
+	margin-top: -25%;
+	margin-left: 28%;
+}
+
+.wheater1 {
+	background-color: green;
+	color: yellow;
+	border: 3px solid red;
+}
+
+.wheater2 {
+	background-color: yellow;
+	color: blue;
+	border: 3px solid green;
+}
+
+.wheater3 {
+	background-color: goldenrod;
+	color: blue;
+	border: 3px solid green;
+}
+
+.wheater4 {
+	background-color: white;
+	color: black;
+	border: 3px solid blue;
+}
+
+.Add_Mine {
+	background-color: brown;
+	color: aqua;
+	border: solid 3 px orangered;
+	width: 200px;
+}
+
+.table {
+	width: 50%;
+	margin-top: -300px;
+	margin-left: 480px;
+	color: #F5ECEE;
+	background-color: rgba(4, 9, 30, 0.7);
+	/* background-color: #172A57; */
+}
+
+.Unikal {
+	background-color: darkblue;
+	color: aqua;
+	border: solid 3 px aqua;
+	width: 200px;
+	margin-right: -20%;
 }

@@ -20,25 +20,43 @@
 				<li><a class="active" href="play.html">Play</a></li>
 			</ul>
 		</nav>
+
+
+		<div class="conteiner">
+
+			<button class="button Add_Grass  "> + Խոտ</button>
+			<button class="button Add_GrassEater">+ Խոտակեր</button>
+			<button class="button Add_Predator">+ Գիշատիչ</button>
+			<button class="button Add_Hunter">+ Որսորդ</button>
+
+
+		</div>
+
+		<div class="conteiner2">
+
+			<button class="button Add_Enviromentalist">+ Բնապահպան</button>
+			<button class="button Add_Mine">+ Ծառ</button>
+			<button class="button Add_Aboriginal">+ Աբորիգեն</button>
+			<button class="button Unikal">Ունիկալ իրադարձություն</button>
+		</div>
+
+		<div class="wheater">
+
+			<button onclick="Back(1)" class="wheater1">Գարուն </button>
+			<button onclick="Back(2)" class="wheater2">Ամառ</button>
+			<button onclick="Back(3)" class="wheater3">Աշուն</button>
+			<button onclick="Back(4)" class="wheater4">ձմեռ</button>
+
+		</div>
+
+
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+		<script src="script.js"></script>
 	</section>
 
 </body>
 
 
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
-	<script src="script.js"></script>
-</body>
-
-</body>
 </html>
-
-<div class="Add_Character">
-	<button onclick= "AddGrass()" class="Add_Grass">Add Grass</button>
-	<button onclick= "AddGrassEater"() class="Add_GrassEater">Add GrassEater</button>
-	<button onclick="AddPredator()" class="Add_Predator">Add Predator</button>
-	<button onclick="AddAboriginal()" class="Add_Aboriginal">Add Aboriginal</button>
-	<button onclick="AddEnviromentalist()" class="Add_Enviromentalist">Add Enviromentalist</button>
-	<button onclick="AddHunter()" class="Add_Hunter">Add Hunter</button>
-
-</div>	
