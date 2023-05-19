@@ -26,7 +26,7 @@ module.exports = class Grass extends LivingCreature {
         }
 
     }
- 
+
 
 }
 

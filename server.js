@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
     res.redirect("home.html")
 })
 
-server.listen(3002)
+server.listen(3001)
 
 
 
@@ -222,12 +222,19 @@ function AddCharr(n) {
         aboriginalArr.push(aboEat)
     }
     else if (n == 8) {
-        let y = 0
-        let x = 0
-        for (let i = 0; i < 19; i++) {
+        let y = -1
+        let x = -1
+        let xa = 20
+        let ya = -1
+        for (let i = 0; i < 20; i++) {
             x++
             y++
             matrix[y][x] = 10
+
+            xa--
+            ya++
+            matrix[ya][xa] = 10
+
         }
 
 

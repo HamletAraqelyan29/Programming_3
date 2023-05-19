@@ -13,9 +13,10 @@ let ses = ["green", "yellow", "red", "blue", "white", "brown", "black"]
 function Back(color) {
 
         if (color == 1) {
-                scolors = ["green", "yellow", "red", "blue", "white", "#964f03", "black"]
-        } else if (color == 2) {
                 scolors = ["#43ff00", "#1a5f02", "#d9ead3", "aqua", "gold", "brown", "purple"]
+        } else if (color == 2) {
+
+                scolors = ["green", "yellow", "red", "blue", "white", "#964f03", "black"]
         } else if (color == 3) {
                 scolors = ["#7c5c00", "#ffc210", "#fce5cd", "purple", "brown", "aqua", "gold"]
         } else if (color == 4) {

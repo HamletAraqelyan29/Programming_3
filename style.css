@@ -89,6 +89,8 @@ button {
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
+
+
 }
 
 span {
@@ -142,124 +144,157 @@ img {
 }
 
 canvas {
-	margin-left: 35%;
-	margin-top: -43%;
+	margin-left: 32%;
+	margin-top: -40%;
 	position: absolute;
 }
 
 .Add_Grass {
-
 	width: 200px;
 	background-color: forestgreen;
 	color: white;
-	font-style: italic;
 	border: 3px solid red;
+}
 
+.Add_Grass:hover {
+	color: red;
 }
 
 .Add_GrassEater {
 	width: 200px;
 	background-color: yellow;
 	color: black;
-	font-style: normal;
-	border: 3px solid blue;
+	border: 3px groove blue;
+}
+
+.Add_GrassEater:hover {
+	color: blue;
 }
 
 .Add_Predator {
 	width: 200px;
 	background-color: red;
 	color: white;
-	font-style: oblique;
-	border: 3px solid orange;
+	border: 3px ridge orange;
+}
+
+.Add_Predator:hover {
+	color: blue;
 }
 
 .Add_Enviromentalist {
 	width: 200px;
 	background-color: white;
 	color: black;
-	font-style: inherit;
-	border: 3px solid blue;
+	border: 3px groove blue;
+}
+
+.Add_Enviromentalist:hover {
+	color: green;
 }
 
 .Add_Aboriginal {
 	width: 200px;
 	background-color: #000000;
 	color: white;
-	font-style: initial;
-	border: 3px solid skyblue;
+	border: 3px inset skyblue;
+}
 
+.Add_Aboriginal:hover {
+	color: yellow;
 }
 
 .Add_Hunter {
 	width: 200px;
 	background-color: blue;
 	color: black;
-	font-style: unset;
-	border: 3px solid red;
+	border: 3px outset red;
+}
+
+.Add_Hunter:hover {
+	color: gold;
 }
 
 .conteiner {
 	width: 100px;
-	margin-top: 15%;
-	margin-left: 25%;
+	margin-top: 21%;
+	margin-left: 7%;
+	font-size: 25px;
+	animation: headShake 0.9s infinite;
 }
 
 .conteiner2 {
 	width: 100px;
-	margin-top: -11%;
-	margin-left: 56%;
-
+	margin-top: -20%;
+	margin-left: 75%;
+	animation: headShake 0.9s infinite;
 }
 
 .wheater {
-	margin-top: -25%;
-	margin-left: 28%;
+	margin-top: -38%;
+	margin-left: 18%;
+	animation: heartBeat 3s infinite;
 }
 
 .wheater1 {
 	background-color: green;
 	color: yellow;
-	border: 3px solid red;
+	border: 3px groove red;
+}
+
+.wheater1:hover {
+	color: yellowgreen;
 }
 
 .wheater2 {
 	background-color: yellow;
 	color: blue;
-	border: 3px solid green;
+	border: 3px ridge green;
+}
+
+.wheater2:hover {
+	color: green;
 }
 
 .wheater3 {
 	background-color: goldenrod;
-	color: blue;
-	border: 3px solid green;
+	color: gold;
+	border: 3px inset green;
+}
+
+.wheater3:hover {
+	color: brown;
 }
 
 .wheater4 {
 	background-color: white;
-	color: black;
-	border: 3px solid blue;
+	color: rgb(20, 164, 231);
+	border: 3px outset blue;
+}
+
+.wheater4:hover {
+	color: blueviolet;
 }
 
 .Add_Mine {
 	background-color: brown;
-	color: aqua;
-	border: solid 3 px orangered;
+	color: white;
+	border: 3px solid red;
 	width: 200px;
 }
 
-.table {
-	width: 50%;
-	margin-top: -300px;
-	margin-left: 480px;
-	color: #F5ECEE;
-	background-color: rgba(4, 9, 30, 0.7);
-	/* background-color: #172A57; */
+.Add_Mine:hover {
+	color: blue;
 }
 
 .Unikal {
 	background-color: darkblue;
-	color: aqua;
-	border: solid 3 px aqua;
+	color: rgb(55, 10, 97);
+	border: solid 3 px red;
 	width: 200px;
 	margin-right: -20%;
+}
+
+.Unikal:hover {
+	color: black;
 }
